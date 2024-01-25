@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Creating the nested objects
+        let school={
+            schoolname:"srinidhi",
+            location:"hnk",
+            student1:{
+                name:'varun',
+                rollno:10,
+            },
+            student2:{
+                name:'deva',
+                rollno:11
+            }
+        };
+        //Accessing properties from nested object
+        console.log(school.student1.name);
+        console.log(school.student2.name);
+        //or
+        console.log(school['student1']['rollno']);
+        console.log(school['student2']['rollno']);
+        //or
+        console.log(school.student1['name']);
+        //or
+        x="student1";
+        y="name";
+        console.log(school[x][y]);
+    </script>
+</body>
+</html>

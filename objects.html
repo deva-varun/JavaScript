@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //General way for creating an object in JavaScript
+        let person={
+            firstname:"varun",
+            lastname:"deva",
+            age:21,
+            address:"HNK"
+        };
+        console.log(person);
+        //Creating an object and then adding properties to an object
+        const person1={};
+        person1.fname='varun';
+        person1.lname='deva';
+        person1.age=21;
+        console.log(person1);
+        //Creating an object using new keyword
+        const person2=new Object();
+        person2.fname='varun';
+        person2.lname='deva';
+        person2.age=21;
+        console.log(person2);
+        //JavaScript objects are mutable
+        let person3={
+            firstname:"varun",
+            lastname:"deva",
+            age:21,
+            address:"HNK"
+        };
+        let x=person3;//Here, i copied the person3 into x and then i chaneged the property value of x and then, automatically property value of person3 also changed.
+        x.age=25;       
+        console.log(person3);
+        //Accessing properties in an object
+        let student={
+            name:'Deva Varun',
+            branch:'CSE',
+            section:1
+        };
+        console.log(student.name+" is studying in "+student.branch);
+        console.log(student['name']+" is studying in "+student['branch']);
+        let x1=student.name;
+        let y1=student.branch;
+        console.log(x1+" is studying in "+y1);
+        //Adding new properties to an object
+        student.address='WGL';
+        console.log(student);
+        //Deleting properties from an object
+        //delete student.address;
+        delete student['address'];
+        console.log(student);
+    </script>
+</body>
+</html>

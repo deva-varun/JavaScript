@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let school={
+            schoolname:"srinidhi",
+            address:"hnk",
+            student1:{
+                name:"varun",
+                marks:590
+            },
+            student2:{
+                name:"deva",
+                marks:595
+            },
+            add(){
+                return this.student1.marks+this.student2.marks;
+            },
+            avg:function(){
+                return (this.student1.marks+this.student2.marks)/2;
+            }
+        };
+        console.log(school.add());
+        console.log(school.avg());
+    </script>
+</body>
+</html>
