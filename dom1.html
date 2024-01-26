@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom1.css">
+</head>
+<body>
+    <div class="div1">
+    <h2>JavaScript Form Validation</h2>
+    <form name="myform" onsubmit="return validateForm()">
+        Name: <input type="text" name="myname" id="myname"><br><br>
+              <input class="sub" type="submit">
+    </form>
+    </div>
+    <script>
+        function validateForm(){
+            let x=document.forms["myform"]["myname"].value;
+            let y=document.getElementById("myname").value;
+            alert(y);
+            if(x==""){
+                alert("Name must be filled");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

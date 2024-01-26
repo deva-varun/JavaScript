@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="studentscount">7th students</p>
+    <script>
+        const count=document.getElementById("studentscount");
+        //changing the html content using innerHTML
+        count.innerHTML="apple <br> banana <br> grapes <br> mango";
+        //changing the html content using textContent here everything treated as text.
+        count.textContent="apple banana grapes mango";
+        //changing the style of an element
+        count.style.color="red";
+        //setting attribute value to the html element
+        count.setAttribute("class","para");
+        //getting attribute value from the html element
+        console.log(count.getAttribute("class"));
+        //changing attribute value of an html element
+        count.setAttribute("class","para1");
+        console.log(count.getAttribute("class"));
+        //creating an html element
+        const img=document.createElement('img');
+        //setting attribute value to the created html element
+        img.setAttribute("id","img1");
+        img.alt="Image";
+        //appending html element
+        document.body.appendChild(img);
+        //setting one more attribute to created html element
+        img.setAttribute("class","img1");
+        console.log(img.getAttribute("class"));
+        //removing html element
+        //document.body.removeChild(img);
+    </script>
+</body>
+</html>
