@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits=["apple","banana","grapes"];//creating an array
+        console.log(fruits);
+        const vegetables=new Array("potato","tomato","onion");//creating an array using new keyword
+        console.log(vegetables);
+        const dairyproducts=[];//creating an array without values
+        dairyproducts[0]="milk";
+        dairyproducts[1]="panner";
+        dairyproducts[3]="butter";
+        console.log(dairyproducts);
+        console.log(fruits[0]);//accessing an array elements
+        console.log(typeof(fruits));
+        fruits[0]="pineapple";//changing the array values
+        console.log(fruits[0]);
+        const s1=vegetables.toString();//converting an array to string
+        console.log(s1);
+        console.log(dairyproducts[0]);//accessing 1st element from dairyproducts
+        console.log(dairyproducts[dairyproducts.length-1]);//accessing last element from dairyproducts
+        for(let i=0;i<fruits.length;i++){//accessing array elements using for loop
+            console.log(fruits[i]);
+        }
+        for(let x in fruits){//accessing array elements using for in loop
+            console.log(fruits[x]);
+        }
+        const person1=[40];//here, array is created as 1element
+        console.log(person1);
+        const person2=new Array(40);//here, array is created as 40 undefined elements
+        console.log(person2);
+    </script>
+</body>
+</html>

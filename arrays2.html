@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=["apple","banana","mango","apple","grapes"];
+        console.log(array.indexOf("apple"));//searches an array of an element and returns its position else -1
+        console.log(array.lastIndexOf("apple"));//searches an array of an element and returns its position but the last occurence else -1
+        console.log(array.includes("pineapple"));//finds that element present in array or not returns true or false
+        const numbers=[1,2,3,4,5,6,7,8,9,10];
+        let first=numbers.find(myFunction);//find method return the value which passes the test first
+        console.log(first);
+        function myFunction(value){
+            return value>5;
+        }
+        let first1=numbers.findIndex(myFunction);//findindex method return the indexvalue which passes the test first
+        console.log(first1);
+        function myFunction(value){
+            return value>5;
+        }
+        let first2=numbers.findLast(myFunction);//findlast method return the value which passes the test first from last
+        console.log(first2);
+        function myFunction(value){
+            return value>5;
+        }
+        let first3=numbers.findLastIndex(myFunction);//findlast method return the indexvalue which passes the test first from last
+        console.log(first3);
+        function myFunction(value){
+            return value>5;
+        }
+        </script>
+</body>
+</html>

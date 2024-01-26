@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits=["apple","banana","mango","grapes","kiwi"];
+        console.log(fruits.length);//prints the length of a given array
+        fruits.pop();//pop is used to delete last element in a array
+        console.log(fruits);
+        fruits.push("guava");//push is used to add last element to an array
+        console.log(fruits);
+        fruits.shift();//shift is used to delete first element in a array
+        console.log(fruits);
+        fruits.unshift("apple");//unshift is used to add first element to an array
+        console.log(fruits);
+        console.log(fruits.join(" "));//join is similar to tostring but it used for seperator
+        delete fruits[0];//delete also used for deleting elements but it leaves undefined holes in an array
+        console.log(fruits);
+        const vegetables=["potato","tomato","onion"];
+        const dairyproducts=["milk","paneer"];
+        const x=vegetables.concat(fruits);//concat is used for adding arrays
+        console.log(x);
+        const y=vegetables.concat(fruits,dairyproducts);//adding 3 arrays
+        console.log(y);
+        //The copyWithin() method copies array elements to another position in an array
+        y.copyWithin(2,9);//copy to index 2, all elements from index 9:
+        console.log(y);
+        y.copyWithin(2,7,9);//copy to index 2,all elements from 7 to 8
+        console.log(y);
+        const flatenning=[[1,2],[3,4],[5,6]];
+        console.log(flatenning.flat());//flatenning "flat" method is used to convert 3d array to 2d array
+        const array=["fruit","banana","mango","kiwi","grapes"];
+        console.log(array);
+        array.splice(2,0,"mango1","watermelon");//splice is used to add an array elements
+        console.log(array);
+        console.log(array.slice(2,6));//slice is used to get a piece of code
+    </script>
+</body>
+</html>
