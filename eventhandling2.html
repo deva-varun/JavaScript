@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1">Try It</button>
+    <p id="temp">Changing color</p>
+    <script>
+        const x=document.getElementById("b1");
+        x.addEventListener("click",changeColor);
+        x.addEventListener("mouseover",changeText);
+        x.addEventListener("mouseout",reverseText);
+        function changeColor(){
+            document.getElementById("temp").style.color="red";
+        }
+        function changeText(){
+            document.getElementById("temp").innerHTML="Deva Varun";
+        }
+        function reverseText(){
+            document.getElementById("temp").innerHTML="Changing Color";
+        }
+    </script>
+</body>
+</html>
