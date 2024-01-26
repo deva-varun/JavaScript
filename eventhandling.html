@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eventhandling.css">
+</head>
+<body>
+    <div id="hover" class="hover">Hover Me!</div>
+    <script>
+        const div=document.getElementById("hover");
+        function changeColorOnHover(){
+            div.style.backgroundColor="lightblue";
+        }
+        function restoreColorOnExit(){
+            div.style.backgroundColor="white";
+        }
+        div.addEventListener("mouseenter",changeColorOnHover);
+        div.addEventListener("mouseleave",restoreColorOnExit);
+    </script>
+</body>
+</html>
